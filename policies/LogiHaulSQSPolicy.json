@@ -1,0 +1,16 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"sqs:SendMessage",
+				"sqs:ReceiveMessage",
+				"sqs:DeleteMessage",
+				"sqs:GetQueueAttributes",
+				"sqs:ChangeMessageVisibility"
+			],
+			"Resource": "arn:aws:sqs:af-south-1:437619427896:LogiHaul-Delivery-Queue"
+		}
+	]
+}
